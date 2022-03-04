@@ -122,6 +122,17 @@
     
     
     <p id="price1" style="color: red;">RS. 999  </p>
+    <label>Enter Promo code</label>
+    <input type="text" id="reffral1" name="reffral1"> 
+    <br>
+    <br>
+
+    <button  onclick="myfun1()">APPLY PROMO CODE</button>
+    <br>
+    <br>
+    <a href="newp.html"><button type="submit">BUY NOW</button></a>
+    <br>
+    <br>
 
    
 </section>
@@ -159,43 +170,27 @@
     <br>
     <br>
     <p style="font-weight: bold;">HEAVY / 12 WEEK</p>
-    <p id="price2" style="color: red;">RS. 1499 </p>
-</section>
-
-<section style=" width: 100%; clear: both;">
-    <h1>
-        Reffral code
-    </h1>
-    <label>Enter Reffral code</label>
-    <input type="text" id="reffral" name="reffral"> 
+    <p id="price2" style="color: red;">RS. 1999 </p>
+    <label>Enter Promo code</label>
+    <input type="text" id="reffral2" name="reffral2"> 
     <br>
     <br>
+    <button  onclick="myfun2()">APPLY PROMO CODE</button>
     <br>
-    <button  onclick="myfun()">APPLY PROMO CODE</button>
+    <br>
+    <a href="newp.html"><button type="submit">BUY NOW</button></a>
 </section>
 
 
-
-
-<section style=" width: 100%; clear: both;">
-
-
-<br>
-<hr>
+<section>
 <br>
 <br>
 <br>
-<h1>
-    payment
-</h1>
-    <a href="newp.html"><button type="submit">PAY NOW</button></a>
-    <br>
-
-<br>
-<br>
-<br>
-<h1>
 </section>
+
+
+
+
 
 
 
@@ -204,22 +199,38 @@
 
     
 <script>
-    function myfun(){
-       var txt=document.getElementById('reffral').value;
+    function myfun1(){
+       var txt=document.getElementById('reffral1').value;
     
-       if(txt==="manitbro"){
+       if(txt==="MANIT15"){
        
-           document.getElementById('price1').innerHTML=" RS. 899";
-           document.getElementById('price2').innerHTML=" RS. 1349";
+           document.getElementById('price1').innerHTML=" RS. 849";
+       }
+
+       else if(txt==="SPECIAL20"){
+       
+       document.getElementById('price1').innerHTML=" RS. 799";
+   }
+       else{
+           alert("promocode is invalid");
+           document.getElementById('reffral').value="";
+       }   
+    }
+
+    function myfun2(){
+       var txt=document.getElementById('reffral2').value;
+    
+       if(txt==="MANIT15"){
+           document.getElementById('price2').innerHTML=" RS. 1749";
+       }
+
+       else if(txt==="SPECIAL20"){
+           document.getElementById('price2').innerHTML=" RS. 1649";
        }
        else{
            alert("promocode is invalid");
            document.getElementById('reffral').value="";
-
-
-       }
-
-        
+       }   
     }
 
 </script>
