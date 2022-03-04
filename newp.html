@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HOME</title>
+    
+   <style>
+       section{
+           text-align: center;
+       }
+       
+       h1{
+           font-size: 25px;
+       }
+
+       a{
+           text-decoration: none;
+       }
+
+       .main{
+           width: 50%;
+           height: 45vh;
+           float: left;
+       }
+       
+
+        
+
+       
+       .first{
+          border: solid 5px  black;
+          box-shadow: 15px 15px #888888;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 5px;
+          background-color: rgb(157, 177, 229);
+      }
+
+      section{
+           width: 50%;
+           float: left;
+       }
+
+       
+
+        
+
+       
+
+       @media screen and (max-width: 700px) {
+            
+           
+            .first{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            section{
+                width: 100%;
+            }
+            
+           
+        }
+
+
+   
+
+
+     
+   </style>
+    
+    
+
+</head>
+<body style="background-color: whitesmoke;">
+<div class="photo">
+    <main>
+    <p style="text-align: center;"><img src="pp.jpg" style="width: 50%; height: 40vh; border-radius: 50%; padding-top: 10px;margin-bottom: 0.1px; margin-left: auto; margin-right: auto;">
+    </p>
+
+    <p style="font-size: 50px; word-spacing: 3px; font-weight:900 ; text-align: center; margin-top: 0px; margin-bottom: 0px;">
+        F & H
+    </p>
+    <p style="font-size: 20px; font-weight:900 ; text-align: center; margin-top: 0px;">
+        More Than A Muscle
+    </p>
+</div>
+
+
+
+<section style=" width: 100%; clear: both;">
+    <h1>
+        payment
+    </h1>
+    <br>
+    <div >
+    <img src="qr.jpg" style="width: 150px;  ">
+    <p style="margin-left:30px;">
+        <br><br><br>
+        RAKESH SINGH
+        <br>
+         rakeshlodhi99921-1@okaxis
+        <br>
+        rakeshlodhi9992@gmail.com
+        <br>
+        +917999692960
+        <br>
+    <p>
+    </div>
+    <p>NOTE: keep the screenshot of payment for further refrence</p> 
+</section>
+
+<section style="clear: both; width: 100%;">
+    <br> <br> <br>
+    <h1 style="word-spacing: 10px; font-size: 20px;" >FILL  THE  REFRENCE  NUMBER  OF  PAYMENT  AND  FURTHER  DETAILS  IN  GIVEN  DOC  FORM</h1>
+    <br>
+    
+    <a  style="text-decoration: none; color: white; background-color: black; padding: 5px; border-radius: 5px; font-size: 20px;"  href="https://docs.google.com/forms/d/e/1FAIpQLScb9bQ2_HMipXl6L7llWVGFh-kQmzEIfKEjKM5WmFaC8bVAuA/viewform?usp=sf_link" target="_blank">
+        Detail Form
+    </a>
+    <br>
+    <br>
+    <br>
+</section>
+
+
+
+
+    
+<script>
+    function myfun(){
+       var txt=document.getElementById('reffral').value;
+    
+       if(txt==="manitbro"){
+       
+           document.getElementById('price1').innerHTML=" RS. 899";
+           document.getElementById('price2').innerHTML=" RS. 1349";
+       }
+       else{
+           alert("promocode is invalid");
+           document.getElementById('reffral').value="";
+
+
+       }
+
+        
+    }
+
+</script>
+    
+
+    
+    
+
+   
+</body>
+</html>
