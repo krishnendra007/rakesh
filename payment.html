@@ -98,7 +98,7 @@
     </p>
     <br>
     <p>
-        Personalized Vegetarian,Non-veg  or Vegan diet Plan.
+        Personalized Vegetarian,Non-veg  or Vegan diet Plan.
     </p>
     <br>
     <p>
@@ -119,7 +119,11 @@
     <br>
     <br>
     <p style="font-weight: bold;">LITE / 4 WEEK</p>
-    <p style="color: red;">RS. 749  <strike style="color: grey;">  1499</strike></p>
+    
+    
+    <p id="price1" style="color: red;">RS. 999  </p>
+
+   
 </section>
 
 
@@ -134,7 +138,7 @@
     </p>
     <br>
     <p>
-        Personalized Vegetarian,Non-veg  or Vegan diet Plan.
+        Personalized Vegetarian,Non-veg  or Vegan diet Plan.
     </p>
     <br>
     <p>
@@ -155,50 +159,70 @@
     <br>
     <br>
     <p style="font-weight: bold;">HEAVY / 12 WEEK</p>
-    <p style="color: red;">RS. 1249  <strike style="color: grey;">  2599</strike></p>
+    <p id="price2" style="color: red;">RS. 1499 </p>
 </section>
-   
 
 <section style=" width: 100%; clear: both;">
     <h1>
-        payment
+        Reffral code
     </h1>
-    <br>
-    <div >
-    <img src="qr.jpg" style="width: 150px;  ">
-    <p style="margin-left:30px;">
-        <br><br><br>
-        RAKESH SINGH
-        <br>
-         rakeshlodhi99921-1@okaxis
-        <br>
-        rakeshlodhi9992@gmail.com
-        <br>
-        +917999692960
-        <br>
-    <p>
-    </div>
-    <p>NOTE: keep the screenshot of payment for further refrence</p> 
-</section>
-
-<section style="clear: both; width: 100%;">
-    <br> <br> <br>
-    <h1 style="word-spacing: 10px; font-size: 20px;" >FILL  THE  REFRENCE  NUMBER  OF  PAYMENT  AND  FURTHER  DETAILS  IN  GIVEN  DOC  FORM</h1>
-    <br>
-    
-    <a  style="text-decoration: none; color: white; background-color: black; padding: 5px; border-radius: 5px; font-size: 20px;"  href="https://docs.google.com/forms/d/e/1FAIpQLScb9bQ2_HMipXl6L7llWVGFh-kQmzEIfKEjKM5WmFaC8bVAuA/viewform?usp=sf_link" target="_blank">
-        Detail Form
-    </a>
+    <label>Enter Reffral code</label>
+    <input type="text" id="reffral" name="reffral"> 
     <br>
     <br>
     <br>
+    <button  onclick="myfun()">APPLY PROMO CODE</button>
 </section>
 
 
 
 
-    
+<section style=" width: 100%; clear: both;">
 
+
+<br>
+<hr>
+<br>
+<br>
+<br>
+<h1>
+    payment
+</h1>
+    <a href="newp.html"><button type="submit">PAY NOW</button></a>
+    <br>
+
+<br>
+<br>
+<br>
+<h1>
+</section>
+
+
+
+
+
+
+    
+<script>
+    function myfun(){
+       var txt=document.getElementById('reffral').value;
+    
+       if(txt==="manitbro"){
+       
+           document.getElementById('price1').innerHTML=" RS. 899";
+           document.getElementById('price2').innerHTML=" RS. 1349";
+       }
+       else{
+           alert("promocode is invalid");
+           document.getElementById('reffral').value="";
+
+
+       }
+
+        
+    }
+
+</script>
     
 
     
