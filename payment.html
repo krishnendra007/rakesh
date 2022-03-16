@@ -191,6 +191,61 @@
 
 
 
+<section style="text-align: center;">
+    <div class="first">
+    <h1>
+        24 weeks
+    </h1>
+    
+    <p>
+         Custom Workout Plan,Gym and Home Workout available.
+    </p>
+    <br>
+    <p>
+        Personalized Vegetarian,Non-veg  or Vegan diet Plan.
+    </p>
+    <br>
+    <p>
+        Budget friendly meal plans with easy recipes
+    </p>
+    <br>
+    <p>
+        Supplement guidance and recommendation
+    </p>
+    <br>
+
+    <p>
+       24x7 support 
+    </p>
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    <p style="font-weight: bold;">ULTIMATE / 24 WEEK</p>
+    <p id="price3" style="color: red;">RS. 3499 </p>
+    <label>Enter Promo code</label>
+    <input type="text" id="reffral3" name="reffral3"> 
+    <br>
+    <br>
+    <button  onclick="myfun3()">APPLY PROMO CODE</button>
+    <br>
+    <br>
+    <a href="newp.html"><button type="submit">BUY NOW</button></a>
+    <br>
+    <br>
+</section>
+
+
+<section>
+<br>
+<br>
+<br>
+</section>
+
+
+
+
 
 
 
@@ -226,6 +281,22 @@
 
        else if(txt==="SPECIAL20"){
            document.getElementById('price2').innerHTML=" RS. 1649";
+       }
+       else{
+           alert("promocode is invalid");
+           document.getElementById('reffral').value="";
+       }   
+    }
+
+    function myfun3(){
+       var txt=document.getElementById('reffral3').value;
+    
+       if(txt==="MANIT15"){
+           document.getElementById('price3').innerHTML=" RS. 2979";
+       }
+
+       else if(txt==="SPECIAL20"){
+           document.getElementById('price3').innerHTML=" RS. 2799";
        }
        else{
            alert("promocode is invalid");
